@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Literata&display=swap");
 h1 {
-  font-family: 'Literata', serif; }
+  font-family: 'Literata', serif;
+  position: relative;
+  margin-top: 20%; }
 
 html, body {
   margin: 0;
