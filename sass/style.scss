@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Literata&display=swap');
+@import 'mixins.scss';
+// $primary-color: #ff0000;
+$font-size: 20px;
+$nav: #333;
+$nav-hover: #aaa;
+$bg-color-image: #e6e6fa;
+$bg-color-btn: #248e16;
+$color-btn: #fff;
+$btn-dark: darken($color-btn,10%);
+//dark theme variables
+$dark-theme-bg:#212121;
+$dark-theme-color:#f8f8ff;
+$dark-theme-nav-hover:#ddd;
+
+h1 {
+    font-family: 'Literata', serif;
+}
+
+html, body{
+    @include default-type();
+}
+p{
+@include para();
+}
+img{
+    @include image();
+}
+
+a{
+    text-decoration: none;
+    font-family: sans-serif;
+}
+nav{
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 360px;
+    padding: 30px;
+    z-index: 2;
+
+    a{
+        color: $nav;
+    }
+
+    a:hover{
+        color: $nav-hover;
+    }
+}
+
